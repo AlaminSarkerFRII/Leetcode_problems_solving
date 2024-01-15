@@ -7,5 +7,14 @@ class Solution:
 
           while number:
                reverse = reverse * 10 + number % 10
+               print('reverse : ', reverse )
                number = number // 10
+               print('number : ', number)
+               print('reverse number : ', reverse)
+
           return x == reverse
+     
+instance = Solution()
+
+res = instance.isPalindrome(121)
+print(res)
