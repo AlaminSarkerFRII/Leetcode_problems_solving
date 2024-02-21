@@ -13,6 +13,8 @@ class Solution:
         return [0 if num == 0 else count[num -1] 
                 for num in nums 
                 ]
+        
+        
 ins  = Solution()
 
 nums = [8,1,2,2,3]
