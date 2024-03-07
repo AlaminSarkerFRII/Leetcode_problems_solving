@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Box Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<style>
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 50px;
+  
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  justify-content: flex-start;
+  border: 1px solid #ddd;
+}
+
+
+.box2 {
+    width: 150px;
+    height: 150px;
+margin: auto;
+background-color: #f86c6c;
+color: #000;
+text-align: center;
+}
+
+.button{
+    width: 10%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f86c6c;
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="box1">  
+        <h3>Far Far Away</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
+        <button class="button">Details</button>
+    </div>
+    
+    <div class="box2">
+        <div class="">
+            <h2>C</h2>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

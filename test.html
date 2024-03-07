@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- CSS Style -->
+
+<style>
+
+.container {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.A, .B, .C {
+  width: 33.3%;
+  float: none;
+  /* For Better UI */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* .B {
+  flex: 1;
+} */
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .C {
+    order: -1;
+  }
+}
+
+
+</style>
+<body>
+    <!-- Container Class with A,  B, C Box -->
+    <div class="container">
+        <div class="A">A</div>
+        <div class="B">B</div>
+        <div class="C">C</div>
+    </div>
+    
+</body>
+</html>
